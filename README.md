@@ -4,8 +4,14 @@ Execution:
 3. Rendered all related files in /app/page.jsx.
 4. Placed logo,images and related videos in public folder.
 5. Used component rendering to show either passenger or commercial vehicle.
-6. Kept the code of footer and header in /app/layout.jsx to render across any page.
-7. Made the page responsive
+6. Used React Hook to handle state change for the vehicle.
+7. Kept the code of footer and header in /app/layout.jsx to render across any page.
+8. Made the page responsive
+
+Industry Best Practices:
+1. Made separate files for separate components.
+2. Used key in mapping an array.
+3. Used constant file for storing logo url.
 
 
 Challenges:

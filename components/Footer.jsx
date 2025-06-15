@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
+import { LOGO_URL } from '@/utils/constants'
 function Footer() {
   return (
    <footer className='font-sans  bg-gradient-to-t from-[#dce8f3] to-white text-gray-700 px-4 py-10'>
     <div className='max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10'>
       <div className='col-span-1 flex flex-col items-start'>
-        <img src="https://supreme-group.vercel.app/static/media/logo.68f5b8493efb88f7cd65756bf67a1f5b.svg" 
+        <img src={LOGO_URL} 
         alt="Supreme Group Logo" 
         className='' />
       </div>

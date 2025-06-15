@@ -1,0 +1,1 @@
+export const LOGO_URL='https://supreme-group.vercel.app/static/media/logo.68f5b8493efb88f7cd65756bf67a1f5b.svg'
