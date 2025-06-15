@@ -33,7 +33,8 @@ function ContactUs() {
   return(
     <div className='min-h-screen bg-[#0067B1] text-white p-10 flex flex-col md:flex-row
     gap-12 justify-center items-center'>
-        <div className='md:w-1/2 space-y-4 '>
+        <div className='w-full flex  flex-col justify-center md:justify-start items-center
+         md:items-start text-center md:text-left md:w-1/2 space-y-4 '>
             <h2 className='text-4xl font-semibold'>Get in touch</h2>
             <p>For general enquiries</p>
             <div>

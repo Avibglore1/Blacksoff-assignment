@@ -19,17 +19,18 @@ function Vehicles() {
     const [selected,setSelected] = useState(0);
     return(
         <div className='flex flex-col h-screen bg-black text-white'>
-            <h2 className='text-3xl mt-16 font-light text-center'>
+            <h2 className='text-3xl mt-16 font-light  text-center'>
                 Evolving the drive with <span className='font-bold'>360-degree</span><br/>
                 comprehensive solutions
             </h2>
-            <div className='flex flex-col md:flex-row mt-9'>
-                <div className='w-1/3 flex flex-col justify-center pl-10 '>
+            <div className='flex flex-col md:flex-row justify-center items-center md:justify-start 
+             mt-9'>
+                <div className='w-full md:w-1/3 flex flex-col justify-center px-10 md:pl-10'>
                 {vehicles.map((vehicle,index)=>(
                     <div
                     key={index}
                     onMouseEnter={()=>setSelected(index)}
-                    className={`cursor-pointer py-6 transition-colors duration-300 ${
+                    className={`cursor-pointer py-4 transition-colors duration-300 ${
                         selected===index ? 'text-white' : 'text-white/40'
                     }`}>
                     <h2 className={`text-2xl font-bold`}>{vehicle.title}</h2>
@@ -37,21 +38,23 @@ function Vehicles() {
                     </div>            
                 ))}
                 </div>
-                <div className='w-2/3 flex flex-col justify-center items-center text-center px-10'>
-                <video src={vehicles[selected].video} 
-                autoPlay 
-                muted 
-                loop 
-                playsInline
-                className="rounded-lg h-[300px] object-cover mb-6"></video>
-                <div className="mt-6 flex gap-8 items-center ">
-                    {vehicles[selected].features.map((feature,idx)=>(
-                        <div key={idx} className='flex flex-col items-center'>
-                            <img src="/images/Cabin 1.png" alt="" />
-                            <span className='text-sm text-white/60'>{feature}</span>
-                        </div>    
-                    ))}                   
-            </div>
+                <div className='w-full md:w-2/3 flex flex-col justify-center items-center text-center 
+                px-6 mt-6 md:mt-0'>
+                    <video src={vehicles[selected].video} 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    className="rounded-lg w-full max-w-xl h-auto md:h-[300px] object-cover mb-6"></video>
+                    <div className="mt-6 flex gap-6 items-center ">
+                        {vehicles[selected].features.map((feature,idx)=>(
+                            <div key={idx} className='flex flex-col items-center w-20'>
+                                <img src="/images/Cabin 1.png"
+                                className='w-10 h-10 object-contain' alt="" />
+                                <span className='text-xs text-white/60 text-center mt-2'>{feature}</span>
+                            </div>    
+                        ))}                   
+                    </div>
                 </div>
             </div>
         </div>
