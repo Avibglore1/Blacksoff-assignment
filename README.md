@@ -5,7 +5,7 @@ Execution:
 4. Placed logo,images and related videos in public folder.
 5. Used component rendering to show either passenger or commercial vehicle.
 6. Kept the code of footer and header in /app/layout.jsx to render across any page.
-
+7. Made the page responsive
 
 
 Challenges:

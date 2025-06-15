@@ -46,7 +46,7 @@ function Vehicles() {
                     loop 
                     playsInline
                     className="rounded-lg w-full max-w-xl h-auto md:h-[300px] object-cover mb-6"></video>
-                    <div className="mt-6 flex gap-6 items-center ">
+                    <div className="mt-6 flex flex-wrap justify-center gap-6 items-center ">
                         {vehicles[selected].features.map((feature,idx)=>(
                             <div key={idx} className='flex flex-col items-center w-20'>
                                 <img src="/images/Cabin 1.png"
